@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Bold.ttf") format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+div {
+    position: absolute;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 100px);
+    width: 200px;
+    height:200px;
+    line-height: 200px;
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: #362400;
+    filter: drop-shadow(0 3px 9px #000fff) grayscale(.5);
+    cursor: pointer;
+    transition: transform .6s ease-in-out, filter .6s ease-in-out;
+}
+
+span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #9f00ff;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 0 0 30px 30px;
+}
+
+div:hover {
+    transform: translateY(-6px);
+    filter: drop-shadow(0 6px 10px #000fff) grayscale(0);
+}
